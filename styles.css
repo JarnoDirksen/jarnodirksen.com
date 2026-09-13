@@ -4,14 +4,22 @@ body {
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding-top: 8rem;
     line-height: 1.6;
 }
 
 /* Header Styles */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4.5rem;
+    scroll-padding-top: 5.5rem;
+}
+
+section[id] {
+    scroll-margin-top: 5.5rem;
+}
+
+#about {
+    padding-top: 1.25rem;
 }
 
 #header {
