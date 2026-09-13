@@ -6,10 +6,26 @@ function initHeader() {
         window.location.pathname === '/' ||
         window.location.pathname.endsWith('/');
 
-    function updateHeader() {
-        const compact = !isHome || window.scrollY > 40;
+    const SHRINK_AT = 80;
+    const EXPAND_AT = 16;
+    let compact = header.classList.contains('is-compact');
+
+    function setCompact(next) {
+        if (compact === next) return;
+        compact = next;
         header.classList.toggle('is-compact', compact);
         document.body.classList.toggle('header-compact', compact);
+    }
+
+    function updateHeader() {
+        if (!isHome) {
+            setCompact(true);
+            return;
+        }
+
+        const y = window.scrollY;
+        if (!compact && y > SHRINK_AT) setCompact(true);
+        else if (compact && y < EXPAND_AT) setCompact(false);
     }
 
     updateHeader();
