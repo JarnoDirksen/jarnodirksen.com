@@ -64,11 +64,14 @@
 
      <!-- Script to Load Header and Footer -->
      <script>
-         fetch('header.html')
-             .then(response => response.text())
-             .then(data => {
-                 document.getElementById('header').innerHTML = data;
-             });
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+                const script = document.createElement('script');
+                script.src = 'header.js';
+                document.body.appendChild(script);
+            });
          fetch('footer.html')
              .then(response => response.text())
              .then(data => {
