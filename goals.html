@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Jarno Dirksen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header"></div>
+        
+    <section id="books">
+        <h2>My Books</h2>
+        <div id="read">
+            <h3>Read</h3>
+            <div class="book-list"></div>
+        </div>
+        <div id="reading">
+            <h3>Currently Reading</h3>
+            <div class="book-list"></div>
+        </div>
+        <div id="want-to-read">
+            <h3>Want to Read</h3>
+            <div class="book-list"></div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="book-details">
+                <img id="modalCover" src="" alt="Book Cover">
+                <div class="book-info">
+                    <h3 id="modalTitle"></h3>
+                    <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+                    <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+                    <p><strong>Author Info:</strong> <span id="modalAuthorInfo"></span></p>
+                    <p><strong>Notes:</strong> <span id="modalNotes"></span></p>
+                    <p><strong>Grade:</strong> <span id="modalGrade"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="books.js"></script>
+     
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+     <!-- Script to Load Header and Footer -->
+     <script>
+         fetch('header.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('header').innerHTML = data;
+             });
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+     </script>
+     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+     <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'924d6d318981c01f',t:'MTc0MjcyNzY0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

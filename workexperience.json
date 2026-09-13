@@ -1,0 +1,50 @@
+[
+    {
+        "date": "September 2025 - June 2025",
+        "heading": "Recruiter at ABN Amro",
+        "description": "As an intern at ABN AMRO's IT Internship Office, I developed my skills in recruiting IT interns. My role as a recruiter taught me to effectively screen CVs and conduct structured interviews, which strengthened my communication and networking skills. I also gained experience in data analysis with Power BI, creating dashboards and reports that provided insights into the recruitment process. These insights led to better decisions and improved efficiency.",
+        "logo": "Images/logo_1_ABNAmro.jpg"
+    },
+    {
+        "date": "September 2023 - March 2024",
+        "heading": "Assistant Wealth Advisor at Affluent",
+        "description": "At Affluent, I assisted in building the asset allocation for new clients, tailored to their investment horizon. Subsequently, I analyzed the existing investment portfolios and wrote the quarterly updates. In these updates, I presented news, returns, and new investment and asset positions. This role increased my interest in the financial sector and provided me with my first direct experience in the business investment world, an area I had previously explored independently via the internet.",
+        "logo": "Images/logo_9_Affluent.jpg"
+    },
+    {
+        "date": "January 2021 - January 2023",
+        "heading": "Duty Manager at Landgoed De Wilmersberg",
+        "description": "At the estate, I went through all facets of the hospitality industry, which enabled me to support the management as a duty manager. My tasks included coordinating daily operations, ensuring compliance with quality standards, and providing an optimal guest experience. I was also involved in organizing an open-air concert for 1000 guests, where I was responsible for the logistics and facilitating a smooth execution of the event.",
+        "logo": "Images/logo_3_Wilmersberg.jpg"
+    },
+    {
+        "date": "September 2019 - July 2020",
+        "heading": "Bartender at Landgoed Lauswolt",
+        "description": "I worked behind the bar and served breakfast. I also observed how fine dining was conducted. This role required hard work and a constant focus on maintaining high quality standards.",
+        "logo": "Images/logo_4_Lauswolt.jpg"
+    },
+    {
+        "date": "November 2018 - July 2019",
+        "heading": "Assistant Cook at Van der Valk Hotel Leeuwarden",
+        "description": "In the kitchen, I had various responsibilities: proper preparation, making meat and egg dishes, and providing guest service in the Live Cooking restaurant.",
+        "logo": "Images/logo_5_VanDerValk.jpg"
+    },
+    {
+        "date": "October 2016 - June 2018",
+        "heading": "All-round Employee at McDonald's De Haven Drachten",
+        "description": "At McDonald's, I learned to work under pressure, in a team, and according to strict processes.",
+        "logo": "Images/logo_6_McDonalds.jpg"
+    },
+    {
+        "date": "Summer 2023, 2024",
+        "heading": "Hotel de Jong, Ameland",
+        "description": "Summer work at Hotel de Jong on Ameland.",
+        "logo": "Images/logo_7_HotelDeJong.jpg"
+    },
+    {
+        "date": "Summer 2018, 2019, 2020",
+        "heading": "Strandpaviljoen Faro 2 en Torenrestaurant, Texel",
+        "description": "Summer work at Strandpaviljoen Faro 2 and Torenrestaurant on Texel.",
+        "logo": "Images/logo_8_TorenPaviljoen.jpg"
+    }
+]

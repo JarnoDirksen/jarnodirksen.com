@@ -1,0 +1,39 @@
+{
+    "name": "Jarno",
+    "categories": [
+      {
+        "name": "Stocks",
+        "color": "#FF5733",
+        "subskills": [
+          {"name": "Bonds", "description": "Understanding corporate bonds"},
+          {"name": "Options", "description": "Basics of call and put options"},
+          {"name": "Futures"},
+          {"name": "Macro news"},
+          {"name": "Q reports"},
+          {"name": "Long term investing"},
+          {"name": "Day trading"},
+          {"name": "DD"},
+          {"name": "Holding"},
+          {"name": "First book"}
+        ]
+      },
+      {
+        "name": "Music",
+        "color": "#33C4FF",
+        "subskills": [
+          {"name": "Listening", "description": "Appreciation of various genres"},
+          {"name": "Singing", "description": "Amateur vocalist"},
+          {"name": "Piano", "description": "5 years of classical training"}
+        ]
+      },
+      {
+        "name": "Cooking",
+        "color": "#28A745",
+        "subskills": [
+          {"name": "Soup"},
+          {"name": "Ice cream"},
+          {"name": "Wine"}
+        ]
+      }
+    ]
+  }

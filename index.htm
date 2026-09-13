@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarno Dirksen - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header"></div>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="Images/1_Jarno.jpg" alt="Jarno Dirksen">
+                <p>Hey, I’m Jarno Dirksen. Nice to meet you! I’m an enthusiastic and ambitious professional based in Drachten, Netherlands, with a passion for technology, financial markets, and personal growth. My journey spans a diverse background—from hands-on roles in hospitality to emerging expertise in business administration and financial management. Currently, I’m pursuing studies at NHL Stenden in Leeuwarden, focusing on Business Administration and International Hospitality Management, where my career blends practical experience with academic drive. I’ve built personal Microsoft Access databases and Excel dashboards to track my investments and finances, showcasing my knack for managing datasets. With a curious mindset, I love diving deep into processes to understand and improve them, and my hard work shines brightest in high-pressure settings. Welcome to my space, where I share my journey, aspirations, and everything in between!</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="mindmap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Reading</h3>
+                    <p>I love diving into books, from psychology to economic analyses.</p>
+                </div>
+                <div class="card">
+                    <h3>Technology</h3>
+                    <p>Exploring coding, web development, and new tech trends excites me.</p>
+                </div>
+                <div class="card">
+                    <h3>Travel</h3>
+                    <p>Discovering new cultures and places is a big part of my life.</p>
+                </div>
+                <div class="card">
+                    <h3>Financial Markets</h3>
+                    <p>I’m dedicated to analyzing stocks and markets, starting each day with TradingView.</p>
+                </div>
+                <div class="card">
+                    <h3>Ice Cream</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h3>Wine</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h3>Music</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h3>Food</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h3>Data</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="container">
+                <div class="timeline">
+                  <ul id="timeline-list"></ul>
+                </div>
+              </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals">
+            <h2>Goals</h2>
+            <div class="goals-container">
+                <div class="goal-category">
+                    <h3>Short-Term (Next 2 Years)</h3>
+                    <ul>
+                        <li>Save 10% of all net income.</li>
+                        <li>Read at least 12 books in 2026.</li>
+                        <li>Figure out how I can be the person who would attract the person I would want to be with.</li>
+                    </ul>
+                </div>
+                <div class="goal-category">
+                    <h3>Medium-Term (Next 10 Years)</h3>
+                    <ul>
+                        <li>Find a wife to start a family.</li>
+                        <li>Build a net worth of €100,000 by age 30.</li>
+                        <li>Work abroad.</li>
+                        <li>Buy a Tesla.</li>
+                    </ul>
+                </div>
+                <div class="goal-category">
+                    <h3>Long-Term (10+ Years)</h3>
+                    <ul>
+                        <li>Become financially independent with a net worth of €4 million.</li>
+                        <li>Lead a company as CEO or Director.</li>
+                        <li>Live a fulfilling life, balancing work, travel, and happiness.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at <a href="/cdn-cgi/l/email-protection#e78d86958988a7829f868a978b82c984888a">[email&#160;protected]</a>.</p>
+            <p>Connect with me on <a href="https://linkedin.com/in/jarnodirksen" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="workexperience.js"></script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="mindmap.js"></script>
+</body>
+</html>
