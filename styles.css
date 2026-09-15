@@ -145,6 +145,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    padding-top: 10rem;
 }
 
 h2 {
@@ -155,17 +156,108 @@ h2 {
 }
 
 /* About Section */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+section[id] {
+    scroll-margin-top: 8rem;
+}
+
+#about {
+    padding-top: 1.5rem;
+}
+
+#about h2 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
 .about-content {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 280px 1fr;
     gap: 2rem;
-    margin-top: 1rem;
+    align-items: start;
 }
 
 .about-content img {
-    max-width: 200px;
+    width: 280px;
+    height: 280px;
+    max-width: none;
+    object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.about-cards .card {
+    text-align: left;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid #e8edf1;
+    box-shadow: none;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.about-cards .card h3 {
+    color: #2c3e50;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.45rem;
+}
+
+.about-cards .card p {
+    color: #4a5560;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.about-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.about-facts span,
+.about-facts a {
+    display: inline-block;
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    background: #eef2f5;
+    color: #2c3e50;
+    font-size: 0.82rem;
+    text-decoration: none;
+}
+
+.about-facts a:hover {
+    background: #2c3e50;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .about-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Skills Section */
