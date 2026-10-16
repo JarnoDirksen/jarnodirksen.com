@@ -78,13 +78,6 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Skills Section */
-#mindmap {
-    width: 100%;
-    height: 80vh; /* Adjusts height based on viewport */
-    border: 1px solid #f9f9f9;
-}
-
 /* Interests Section */
 .card-container {
     display: grid;
