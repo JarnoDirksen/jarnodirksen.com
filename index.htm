@@ -4,26 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarno Dirksen - Personal Website</title>
+    <meta name="description" content="Jarno Dirksen: recruiter at Sogeti with a background in hospitality and finance, pre-master student at Nyenrode Business University, looking for his next step after graduating.">
+    <link rel="canonical" href="https://jarnodirksen.com/">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Jarno Dirksen">
+    <meta property="og:title" content="Jarno Dirksen - Personal Website">
+    <meta property="og:description" content="Jarno Dirksen: recruiter at Sogeti with a background in hospitality and finance, pre-master student at Nyenrode Business University, looking for his next step after graduating.">
+    <meta property="og:url" content="https://jarnodirksen.com/">
+    <meta property="og:image" content="https://jarnodirksen.com/Images/1_Jarno.jpg">
+    <meta property="og:image:alt" content="Portrait of Jarno Dirksen">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jarno Dirksen - Personal Website">
+    <meta name="twitter:description" content="Jarno Dirksen: recruiter at Sogeti with a background in hospitality and finance, pre-master student at Nyenrode Business University, looking for his next step after graduating.">
+    <meta name="twitter:image" content="https://jarnodirksen.com/Images/1_Jarno.jpg">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jarno Dirksen",
+  "url": "https://jarnodirksen.com/",
+  "image": "https://jarnodirksen.com/Images/1_Jarno.jpg",
+  "email": "mailto:jarnodirksen@gmail.com",
+  "jobTitle": "Recruiter",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Sogeti"
+  },
+  "description": "Recruiter at Sogeti (part of Capgemini) with a background in hospitality and finance, currently following the pre-master for the MSc in Management at Nyenrode Business University.",
+  "knowsLanguage": ["nl", "en", "de"],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "NHL Stenden University of Applied Sciences"
+  },
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Nyenrode Business University"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/jarnodirksen"
+  ]
+}
+    </script>
 </head>
 <body>
-    <!-- Header Placeholder -->
-    <div id="header"></div>
+    <header>
+        <a class="site-title" href="/">Jarno Dirksen</a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/books.html">Books</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="Images/1_Jarno.jpg" alt="Jarno Dirksen">
-                <p>Hey, I’m Jarno Dirksen. Nice to meet you! I’m an enthusiastic and ambitious professional based in Drachten, Netherlands, with a passion for technology, financial markets, and personal growth. My journey spans a diverse background—from hands-on roles in hospitality to emerging expertise in business administration and financial management. Currently, I’m pursuing studies at NHL Stenden in Leeuwarden, focusing on Business Administration and International Hospitality Management, where my career blends practical experience with academic drive. I’ve built personal Microsoft Access databases and Excel dashboards to track my investments and finances, showcasing my knack for managing datasets. With a curious mindset, I love diving deep into processes to understand and improve them, and my hard work shines brightest in high-pressure settings. Welcome to my space, where I share my journey, aspirations, and everything in between!</p>
+                <picture>
+                    <source srcset="Images/1_Jarno.webp" type="image/webp">
+                    <img src="Images/1_Jarno.jpg" alt="Jarno Dirksen" width="450" height="600">
+                </picture>
+                <div class="about-text">
+                    <p>Hi, I’m Jarno. I started out in hospitality, where I learned to work hard, stay calm under pressure and put people first. From there I moved into finance as an assistant wealth advisor, and then into IT recruitment, first at ABN AMRO and now as a recruiter at Sogeti (part of Capgemini) in Groningen, where I help young IT professionals find their place.</p>
+                    <p>Right now I’m following the pre-master for the MSc in Management at Nyenrode Business University, where I also tutor fellow students in economics and finance. After graduating, I’m looking for my dream job: a role where people, business and numbers come together.</p>
+                    <p>Outside work and study you’ll often find me on the water: I row a lot and I’m aiming to join the board of rowing association Het Galjoen. I also love reading, psychology and following the stock market.</p>
+                    <p class="about-facts"><strong>Languages:</strong> Dutch (native), English (advanced), German (intermediate)<br>
+                    <strong>Tools:</strong> Excel (expert), Power BI and Access (advanced), SQL, DAX and Python (basic)</p>
+                </div>
             </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div id="mindmap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
         </section>
 
         <!-- Interests Section -->
@@ -48,23 +109,23 @@
                 </div>
                 <div class="card">
                     <h3>Ice Cream</h3>
-                    <p></p>
+                    <p>Few things beat a good scoop of ice cream, and I’m always happy to try a new flavour.</p>
                 </div>
                 <div class="card">
                     <h3>Wine</h3>
-                    <p></p>
+                    <p>I enjoy discovering different wines and learning a little more about where they come from.</p>
                 </div>
                 <div class="card">
                     <h3>Music</h3>
-                    <p></p>
+                    <p>Music is part of my everyday routine, whether I’m working, travelling or just unwinding.</p>
                 </div>
                 <div class="card">
                     <h3>Food</h3>
-                    <p></p>
+                    <p>I love good food and trying new dishes, especially when travelling or sharing a meal with others.</p>
                 </div>
                 <div class="card">
                     <h3>Data</h3>
-                    <p></p>
+                    <p>I enjoy turning raw numbers into insight, from Excel dashboards to databases that track what matters.</p>
                 </div>
             </div>
         </section>
@@ -72,11 +133,26 @@
         <!-- Work Experience Section -->
         <section id="experience">
             <h2>Work Experience</h2>
-            <div class="container">
-                <div class="timeline">
-                  <ul id="timeline-list"></ul>
-                </div>
-              </div>
+            <div class="timeline">
+                <ul id="timeline-list"></ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="edu-list">
+                <li>
+                    <p class="date">2026 - present</p>
+                    <h3>Pre-master MSc in Management</h3>
+                    <p>Nyenrode Business University</p>
+                </li>
+                <li>
+                    <p class="date">2018 - 2025</p>
+                    <h3>BSc International Hospitality Management</h3>
+                    <p>NHL Stenden, minor Operations Management</p>
+                </li>
+            </ul>
         </section>
 
         <!-- Goals Section -->
@@ -84,28 +160,27 @@
             <h2>Goals</h2>
             <div class="goals-container">
                 <div class="goal-category">
-                    <h3>Short-Term (Next 2 Years)</h3>
+                    <h3>Career</h3>
                     <ul>
-                        <li>Save 10% of all net income.</li>
+                        <li>Keep growing at the intersection of business, finance and technology.</li>
+                        <li>Gain international experience by working abroad.</li>
+                        <li>Grow into a leadership role and, in time, lead an organisation.</li>
+                    </ul>
+                </div>
+                <div class="goal-category">
+                    <h3>Personal Growth</h3>
+                    <ul>
                         <li>Read at least 12 books in 2026.</li>
-                        <li>Figure out how I can be the person who would attract the person I would want to be with.</li>
+                        <li>Keep investing in myself and become the best version of who I want to be.</li>
+                        <li>Build healthy financial habits, saving consistently and investing for the long term.</li>
                     </ul>
                 </div>
                 <div class="goal-category">
-                    <h3>Medium-Term (Next 10 Years)</h3>
+                    <h3>Life</h3>
                     <ul>
-                        <li>Find a wife to start a family.</li>
-                        <li>Build a net worth of €100,000 by age 30.</li>
-                        <li>Work abroad.</li>
-                        <li>Buy a Tesla.</li>
-                    </ul>
-                </div>
-                <div class="goal-category">
-                    <h3>Long-Term (10+ Years)</h3>
-                    <ul>
-                        <li>Become financially independent with a net worth of €4 million.</li>
-                        <li>Lead a company as CEO or Director.</li>
-                        <li>Live a fulfilling life, balancing work, travel, and happiness.</li>
+                        <li>Build a warm family life with a partner to share it with.</li>
+                        <li>Work towards financial independence, giving me freedom and peace of mind.</li>
+                        <li>Live a fulfilling life, balancing work, travel and happiness.</li>
                     </ul>
                 </div>
             </div>
@@ -114,30 +189,15 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me at <a href="/cdn-cgi/l/email-protection#e78d86958988a7829f868a978b82c984888a">[email&#160;protected]</a>.</p>
-            <p>Connect with me on <a href="https://linkedin.com/in/jarnodirksen" target="_blank">LinkedIn</a>.</p>
+            <p>Feel free to reach out to me at <a href="mailto:jarnodirksen@gmail.com">jarnodirksen@gmail.com</a>.</p>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/jarnodirksen" target="_blank" rel="noopener">LinkedIn</a>.</p>
         </section>
     </main>
 
-    <!-- Footer Placeholder -->
-    <div id="footer"></div>
+    <footer>
+        <p>&copy; 2026 Jarno Dirksen</p>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="workexperience.js"></script>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
-    <script src="mindmap.js"></script>
+    <script src="/workexperience.js"></script>
 </body>
 </html>
