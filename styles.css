@@ -267,3 +267,30 @@ footer {
     .book-body { padding: 0.5rem 0.75rem 0.75rem; }
 }
 section { scroll-margin-top: 4rem; }
+
+/* Buttons */
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn {
+    display: inline-block;
+    padding: 0.55rem 1.2rem;
+    border: 2px solid #3498db;
+    border-radius: 999px;
+    background: #3498db;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn:hover, .btn:focus-visible { background: #2c80b9; border-color: #2c80b9; }
+.btn-secondary { background: transparent; color: #3498db; }
+.btn-secondary:hover, .btn-secondary:focus-visible { color: #fff; }
+nav a.nav-cta { padding: 0.15rem 0.8rem; border-radius: 999px; background: #3498db; color: #fff; }
+nav a.nav-cta:hover, nav a.nav-cta:focus-visible { background: #2c80b9; color: #fff; }
+
+/* Now */
+.now-list { padding-left: 1.2rem; }
+.now-list li { margin-bottom: 0.4rem; }
+.updated { margin-top: 0.75rem; font-size: 0.85rem; color: #7f8c8d; }
+#writing-list { grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); }
+#writing-list a { font-weight: 600; text-decoration: none; }
+#writing > p { margin-bottom: 1rem; }
+footer a { color: #ecf0f1; }
