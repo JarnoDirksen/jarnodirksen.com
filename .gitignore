@@ -5,5 +5,3 @@ node_modules/
 *.log
 .env
 sftp.json
-# Private, not published yet
-Jarno_Dirksen_CV.pdf
