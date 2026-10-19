@@ -294,3 +294,28 @@ nav a.nav-cta:hover, nav a.nav-cta:focus-visible { background: #2c80b9; color: #
 #writing-list a { font-weight: 600; text-decoration: none; }
 #writing > p { margin-bottom: 1rem; }
 footer a { color: #ecf0f1; }
+
+/* About tags */
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+.tag {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #3498db;
+    border-radius: 999px;
+    background: #eaf4fc;
+    color: #2c3e50;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+.tag:hover, .tag:focus-visible { background: #3498db; color: #fff; transform: translateY(-2px); }
+.tag:active { transform: scale(0.95); }
+.tag-fact { min-height: 1.6em; margin-bottom: 1rem; font-size: 0.95rem; font-style: italic; color: #555; }
+.flash { animation: flash 1.6s ease; }
+@keyframes flash { 0%, 40% { box-shadow: 0 0 0 4px #3498db; } 100% { box-shadow: 0 0 0 4px transparent; } }
+@media (prefers-reduced-motion: reduce) {
+    .tag, .tag:hover, .tag:active { transition: none; transform: none; }
+    .flash { animation: none; outline: 3px solid #3498db; }
+}

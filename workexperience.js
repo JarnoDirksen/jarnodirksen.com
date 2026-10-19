@@ -12,6 +12,7 @@ fetch('/workexperience.json')
         const list = document.getElementById('timeline-list');
         data.forEach(item => {
             const li = make('li');
+            if (item.id) li.id = item.id;
             const c = make('div', 'timeline-content');
             c.append(make('p', 'date', item.date));
             const head = make('div', 'heading-with-logo');
