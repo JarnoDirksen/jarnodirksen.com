@@ -1,11 +1,14 @@
 [
     {
+        "id": "exp-sogeti",
         "date": "Jul 2025 - present",
         "heading": "Recruiter",
         "company": "Sogeti (part of Capgemini), Groningen",
-        "description": "Recruiting young IT professionals; made my first three hires and earned a Lean Six Sigma Yellow Belt."
+        "description": "Recruiting young IT professionals; made my first three hires and earned a Lean Six Sigma Yellow Belt.",
+        "logo": "Images/logo_10_Sogeti.webp"
     },
     {
+        "id": "exp-abnamro",
         "date": "Sep 2024 - Jun 2025",
         "heading": "Recruitment Intern",
         "company": "ABN AMRO, IT Internship Desk",
@@ -13,13 +16,20 @@
         "logo": "Images/logo_1_ABNAmro.jpg"
     },
     {
+        "id": "exp-affluent",
         "date": "Sep 2023 - Mar 2024",
         "heading": "Assistant Wealth Advisor",
         "company": "Affluent",
-        "description": "Built asset allocations, wrote quarterly updates for 40+ clients and authored the 'Financiële Terugblik 2023'.",
-        "logo": "Images/logo_9_Affluent.jpg"
+        "description": "Built asset allocations, wrote quarterly updates for 40+ clients and authored the ",
+        "logo": "Images/logo_9_Affluent.jpg",
+        "link": {
+            "text": "Financiële Terugblik 2023",
+            "url": "https://x.com/JarnoDirksen/status/1745891125431337095"
+        },
+        "after": "."
     },
     {
+        "id": "exp-wilmersberg",
         "date": "Jan 2021 - Jan 2023",
         "heading": "Duty Manager",
         "company": "Landgoed De Wilmersberg",

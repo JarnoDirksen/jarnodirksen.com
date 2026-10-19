@@ -12,6 +12,7 @@ fetch('/workexperience.json')
         const list = document.getElementById('timeline-list');
         data.forEach(item => {
             const li = make('li');
+            if (item.id) li.id = item.id;
             const c = make('div', 'timeline-content');
             c.append(make('p', 'date', item.date));
             const head = make('div', 'heading-with-logo');
@@ -25,7 +26,17 @@ fetch('/workexperience.json')
             }
             c.append(head);
             if (item.company) c.append(make('p', 'company', item.company));
-            if (item.description) c.append(make('p', null, item.description));
+            if (item.description) {
+                const p = make('p', null, item.description);
+                if (item.link) {
+                    const a = make('a', null, item.link.text);
+                    a.href = item.link.url;
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                    p.append(a, item.after || '');
+                }
+                c.append(p);
+            }
             if (item.details) {
                 const ul = make('ul', 'details');
                 item.details.forEach(d => ul.append(make('li', null, d)));

@@ -38,6 +38,15 @@ header {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: padding 0.3s ease;
+}
+
+header.is-compact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 1rem;
 }
 
 .site-title {
@@ -45,7 +54,13 @@ header {
     text-decoration: none;
     font-weight: 700;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
+    transition: font-size 0.3s ease;
 }
+
+.is-compact .site-title { font-size: 1.2rem; white-space: nowrap; }
+.is-compact nav { min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.is-compact nav ul { flex-wrap: nowrap; justify-content: flex-end; gap: 1rem; margin-top: 0; }
+.is-compact nav a { font-size: 0.9rem; white-space: nowrap; }
 
 nav ul {
     list-style: none;
@@ -84,9 +99,10 @@ main.wide { max-width: 1200px; }
     gap: 2rem;
 }
 
+.about-content picture { flex-shrink: 0; }
+
 .about-content img {
-    width: 200px;
-    flex-shrink: 0;
+    width: 280px;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -149,7 +165,13 @@ main.wide { max-width: 1200px; }
 .edu-list li { background: #fff; padding: 1rem 1.25rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 .edu-list .date { color: #7f8c8d; }
 .about-text p { margin-bottom: 1rem; }
-.about-facts { font-size: 0.95rem; color: #555; }
+.about-text h3 { color: #2c3e50; margin-bottom: 0.5rem; }
+.values { padding-left: 1.2rem; }
+.values li { margin-bottom: 0.4rem; }
+
+/* Interests photo + cards */
+.interests-layout { display: grid; grid-template-columns: 260px 1fr; gap: 1.5rem; align-items: start; }
+.interests-photo img { width: 100%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
 @media (max-width: 600px) {
     .heading-with-logo { flex-direction: column; align-items: flex-start; }
@@ -235,7 +257,65 @@ footer {
 @media (max-width: 600px) {
     nav ul { gap: 0.25rem 1rem; }
     .about-content { flex-direction: column; text-align: center; }
-    .about-content img { width: 160px; }
+    .about-content img { width: 220px; }
+    .about-text { text-align: left; }
+    .interests-layout { grid-template-columns: 1fr; }
+    .interests-photo { max-width: 320px; margin: 0 auto; }
+    .is-compact .site-title { font-size: 1rem; }
+    .is-compact nav ul { justify-content: flex-start; }
     .book-list { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     .book-body { padding: 0.5rem 0.75rem 0.75rem; }
+}
+section { scroll-margin-top: 4rem; }
+
+/* Buttons */
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn {
+    display: inline-block;
+    padding: 0.55rem 1.2rem;
+    border: 2px solid #3498db;
+    border-radius: 999px;
+    background: #3498db;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn:hover, .btn:focus-visible { background: #2c80b9; border-color: #2c80b9; }
+.btn-secondary { background: transparent; color: #3498db; }
+.btn-secondary:hover, .btn-secondary:focus-visible { color: #fff; }
+nav a.nav-cta { padding: 0.15rem 0.8rem; border-radius: 999px; background: #3498db; color: #fff; }
+nav a.nav-cta:hover, nav a.nav-cta:focus-visible { background: #2c80b9; color: #fff; }
+
+/* Now */
+.now-list { padding-left: 1.2rem; }
+.now-list li { margin-bottom: 0.4rem; }
+.updated { margin-top: 0.75rem; font-size: 0.85rem; color: #7f8c8d; }
+#writing-list { grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); }
+#writing-list a { font-weight: 600; text-decoration: none; }
+#writing > p { margin-bottom: 1rem; }
+footer a { color: #ecf0f1; }
+
+/* About tags */
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+.tag {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #3498db;
+    border-radius: 999px;
+    background: #eaf4fc;
+    color: #2c3e50;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+.tag:hover, .tag:focus-visible { background: #3498db; color: #fff; transform: translateY(-2px); }
+.tag:active { transform: scale(0.95); }
+.tag-fact { min-height: 1.6em; margin-bottom: 1rem; font-size: 0.95rem; font-style: italic; color: #555; }
+.flash { animation: flash 1.6s ease; }
+@keyframes flash { 0%, 40% { box-shadow: 0 0 0 4px #3498db; } 100% { box-shadow: 0 0 0 4px transparent; } }
+@media (prefers-reduced-motion: reduce) {
+    .tag, .tag:hover, .tag:active { transition: none; transform: none; }
+    .flash { animation: none; outline: 3px solid #3498db; }
 }
